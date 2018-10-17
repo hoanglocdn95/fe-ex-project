@@ -1,0 +1,103 @@
+{
+  "item": [
+    {
+      "id": 0,
+      "name": "Item 01",
+      "img": "/lib/img/cover-phone-1.jpg",
+      "description": "Loại ốp lưng được giới trẻ ưa dùng hiện nay, thể hiện được sự cá tính và độc đáo của chủ sỡ hữu chiếc điện thoại",
+      "hot": 1
+    },
+    {
+      "id": 1,
+      "name": "Item 2",
+      "img": "/lib/img/cover-phone-2.jpg",
+      "description": "Loại ốp lưng phù hợp với mọi lứa tuổi, giúp bạn dễ dàng nổi bật giữa đám đông, và không hề bị đụng hàng",
+      "hot": 0
+    },
+    {
+      "id": 2,
+      "name": "Item 3",
+      "img": "/lib/img/cover-phone-3.jpg",
+      "description": "Loại ốp lưng thông dụng, dễ nhìn và cực kì bắt mắt, không quá cầu kỳ nhưng vẫn vô cùng thu hút",
+      "hot": 0
+    },
+    {
+      "id": 3,
+      "name": "Item 4",
+      "img": "/lib/img/cover-phone-4.jpg",
+      "description": "Loại ốp lưng được giới trẻ ưa dùng hiện nay, thể hiện được sự cá tính và độc đáo của chủ sỡ hữu chiếc điện thoại",
+      "hot": 1
+    },
+    {
+      "id": 4,
+      "name": "Item 5",
+      "img": "/lib/img/cover-phone-5.jpg",
+      "description": "Loại ốp lưng phù hợp với mọi lứa tuổi, giúp bạn dễ dàng nổi bật giữa đám đông, và không hề bị đụng hàng",
+      "hot": 0
+    },
+    {
+      "id": 5,
+      "name": "Item 6",
+      "img": "/lib/img/cover-phone-6.jpg",
+      "description": "Loại ốp lưng thông dụng, dễ nhìn và cực kì bắt mắt, không quá cầu kỳ nhưng vẫn vô cùng thu hút",
+      "hot": 1
+    },
+    {
+      "id": 6,
+      "name": "Item 7",
+      "img": "/lib/img/cover-phone-7.jpg",
+      "description": "Loại ốp lưng được giới trẻ ưa dùng hiện nay, thể hiện được sự cá tính và độc đáo của chủ sỡ hữu chiếc điện thoại",
+      "hot": 0
+    },
+    {
+      "id": 7,
+      "name": "Item 8",
+      "img": "/lib/img/cover-phone-8.jpg",
+      "description": "Loại ốp lưng phù hợp với mọi lứa tuổi, giúp bạn dễ dàng nổi bật giữa đám đông, và không hề bị đụng hàng",
+      "hot": 1
+    },
+    {
+      "id": 8,
+      "name": "Item 9",
+      "img": "/lib/img/cover-phone-9.jpg",
+      "description": "Loại ốp lưng thông dụng, dễ nhìn và cực kì bắt mắt, không quá cầu kỳ nhưng vẫn vô cùng thu hút",
+      "hot": 0
+    },
+    {
+      "id": 9,
+      "name": "Item 10",
+      "img": "/lib/img/cover-phone-10.jpg",
+      "description": "Loại ốp lưng phù hợp với mọi lứa tuổi, giúp bạn dễ dàng nổi bật giữa đám đông, và không hề bị đụng hàng",
+      "hot": 1
+    }
+  ],
+  "user": [
+    {
+      "id": 0,
+      "userName": "anhchiendeptrai",
+      "password": "123",
+      "phone": "0903456789",
+      "mail": "meow meow",
+      "avatar": "",
+      "cart": []
+    },
+    {
+      "id": 1,
+      "userName": "anhhuydeptrai",
+      "password": "123",
+      "phone": "0903456789",
+      "mail": "meow meow",
+      "avatar": "",
+      "cart": []
+    },
+    {
+      "id": 2,
+      "userName": "chiphuong",
+      "password": "123",
+      "phone": "0903456789",
+      "mail": "meow meow",
+      "avatar": "",
+      "cart": []
+    }
+  ]
+}

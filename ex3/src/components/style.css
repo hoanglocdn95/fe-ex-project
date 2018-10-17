@@ -1,0 +1,78 @@
+#list-all{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.list{
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .list .input-list{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .list .input-edit{
+        float: right;
+        font-size: 15px;
+    }
+    .list button{
+        float: right;
+        margin-left: 10px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .list .button-save{
+        float: right;
+        margin-left: 10px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .list .input-list{
+        display: inline-block;
+        font-size: 30px;
+    }
+    .list .input-edit{
+        float: right;
+        font-size: 30px;
+    }
+    .list button{
+        float: right;
+        margin-left: 20px;
+        border: 1px solid grey;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .list .button-save{
+        float: right;
+        margin-left: 20px;
+        border: 1px solid grey;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+.list>button:hover{
+    background-color: blue;
+    color:white;
+}
+form{
+    margin-left: 20px;
+}
+form input{
+    font-size: 25px;
+}
