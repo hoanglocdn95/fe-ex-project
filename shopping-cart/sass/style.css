@@ -1,0 +1,524 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf"); }
+/* line 10, style.scss */
+#back {
+  text-align: center;
+  float: right;
+  background-color: black;
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border: 1px;
+    border-style: solid;
+    border-radius: 9px; }
+  /* line 24, style.scss */
+  #back a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none; }
+
+/* line 30, style.scss */
+#back:hover {
+  background-color: #ef6237;
+  border-color: #ef6237; }
+
+/* line 34, style.scss */
+#header {
+  text-align: center; }
+  /* line 36, style.scss */
+  #header .header-top {
+    padding: 5px;
+    width: 100%;
+    background-color: #f0f2e6; }
+  /* line 43, style.scss */
+  #header .header-top div {
+    display: inline-block; }
+  /* line 47, style.scss */
+  #header .header-top-left a {
+    margin: 3px;
+    padding: 3px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none; }
+  /* line 54, style.scss */
+  #header .header-top-left a:hover {
+    color: red; }
+  /* line 58, style.scss */
+  #header .header-top-center p {
+    font-family: Montserrat-Regular;
+    font-size: 14px; }
+
+/* line 63, style.scss */
+.header-top-right div {
+  display: inline-block;
+  text-align: right; }
+
+/* line 67, style.scss */
+.header-nav {
+  padding: 5px;
+  margin: 8px 5px 3px 5px; }
+  /* line 71, style.scss */
+  .header-nav .header-nav-list a {
+    margin: 5px;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    color: black; }
+  /* line 80, style.scss */
+  .header-nav .header-nav-list ul {
+    list-style-type: none; }
+  /* line 84, style.scss */
+  .header-nav .header-nav-list ul li {
+    display: inline-block; }
+  /* line 89, style.scss */
+  .header-nav div {
+    display: inline-block; }
+
+/* line 93, style.scss */
+.vertical-line {
+  border-left: 1px solid black; }
+
+@media only screen and (max-width: 1250px) {
+  /* line 97, style.scss */
+  .verticalLine {
+    display: none; } }
+/* line 102, style.scss */
+.header-nav-right span {
+  margin: 5px;
+  padding: 5px; }
+
+/* line 108, style.scss */
+.slide h3, .slide-item h3 {
+  margin: 25px;
+  padding: 20px;
+  text-align: center;
+  font-family: Montserrat-Bold; }
+/* line 116, style.scss */
+.slide a, .slide-item a {
+  color: black; }
+
+/* line 120, style.scss */
+.items {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  margin: 0;
+  padding: 20px; }
+  /* line 126, style.scss */
+  .items .items-col {
+    width: 33%; }
+    /* line 128, style.scss */
+    .items .items-col .items-col-tag {
+      margin: 15px;
+      padding: 0; }
+
+/* line 134, style.scss */
+.blog {
+  padding: 20px 10px 20px 10px;
+  background-color: #f0f2e6; }
+  /* line 137, style.scss */
+  .blog .blog-tag {
+    margin: 10px;
+    padding: 10px; }
+    /* line 140, style.scss */
+    .blog .blog-tag img {
+      width: 100%;
+      height: auto; }
+
+/* line 147, style.scss */
+.our-blog .our-blog-tag {
+  margin: 5px;
+  padding: 5px; }
+  /* line 150, style.scss */
+  .our-blog .our-blog-tag img {
+    width: 100%;
+    height: auto; }
+  /* line 154, style.scss */
+  .our-blog .our-blog-tag a {
+    padding-top: 10px;
+    color: black;
+    text-decoration: none; }
+  /* line 159, style.scss */
+  .our-blog .our-blog-tag a:hover {
+    color: red; }
+
+/* line 165, style.scss */
+.instagram div {
+  margin: 0;
+  padding: 0; }
+/* line 170, style.scss */
+.instagram .instagram-image img {
+  width: 100%;
+  height: auto; }
+
+/* line 176, style.scss */
+.policy {
+  margin: 0px;
+  padding: 30px; }
+
+@media only screen and (max-width: 500px) {
+  /* line 182, style.scss */
+  .policy div {
+    border: none; } }
+/* line 187, style.scss */
+footer {
+  background-color: #f0f2e6;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px; }
+  /* line 193, style.scss */
+  footer h6 {
+    font-family: Monsterrat-Bold;
+    font-style: bold; }
+  /* line 199, style.scss */
+  footer p {
+    font-family: Monsterrat-Regular;
+    font-size: 14px; }
+
+/* line 206, style.scss */
+#subcribe {
+  margin: 10px;
+  padding: 5px 30px 3px 30px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-family: Montserrat-Regular;
+  cursor: wait; }
+
+/* line 217, style.scss */
+.footer-icon a {
+  margin: 3px;
+  padding: 3px;
+  font-size: 22px;
+  color: black;
+  text-decoration: none; }
+/* line 224, style.scss */
+.footer-icon a:hover {
+  color: red; }
+
+/* line 234, style.scss */
+.contact #contact-form legend, .contact #contact-form input, .contact #contact-form textarea {
+  margin: 20px;
+  padding: 15px; }
+/* line 238, style.scss */
+.contact #contact-form button {
+  margin-left: 20px;
+  padding: 10px 40px 10px 40px;
+  background-color: black;
+  color: white;
+  border: 1px;
+    border-radius: 15px;
+    border-style: solid;
+  font-size: 20px;
+  font-style: bold; }
+/* line 252, style.scss */
+.contact #contact-form button:hover {
+  background-color: red; }
+/* line 255, style.scss */
+.contact #contact-form textarea {
+  height: 100%; }
+
+/* line 262, style.scss */
+.shop-left-filter button {
+  display: block;
+  margin-left: 20px;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  color: white;
+  border: 1px;
+    border-radius: 18px;
+    border-style: solid;
+  font-size: 14px;
+  font-style: bold; }
+
+/* line 288, style.scss */
+#color-1 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: lime;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid lime; }
+
+/* line 288, style.scss */
+#color-2 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid red; }
+
+/* line 288, style.scss */
+#color-3 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: lightskyblue;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid lightskyblue; }
+
+/* line 288, style.scss */
+#color-4 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: yellow;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid yellow; }
+
+/* line 288, style.scss */
+#color-5 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid black; }
+
+/* line 288, style.scss */
+#color-6 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #7b172d;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #7b172d; }
+
+/* line 302, style.scss */
+.shop-content .shop-content-item a {
+  text-decoration: none; }
+  /* line 304, style.scss */
+  .shop-content .shop-content-item a:hover {
+    color: red; }
+/* line 310, style.scss */
+.shop-content .shop-content-drop select {
+  margin: 0 10px 20px 18px;
+  padding: 10px; }
+/* line 316, style.scss */
+.shop-content .shop-content-page div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid black; }
+  /* line 326, style.scss */
+  .shop-content .shop-content-page div p {
+    color: white;
+    text-align: center; }
+  /* line 331, style.scss */
+  .shop-content .shop-content-page div:hover p {
+    color: red; }
+
+/* line 341, style.scss */
+.detail .detail-left .detail-left-display {
+  overflow: hidden; }
+
+/* line 346, style.scss */
+#detail-left-display-1 {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 15px;
+  display: block; }
+
+/* line 355, style.scss */
+#detail-left-type-1 {
+  display: block;
+  margin: 15px;
+  padding: 0; }
+  /* line 359, style.scss */
+  #detail-left-type-1:hover {
+    border: 2px solid black; }
+
+/* line 355, style.scss */
+#detail-left-type-2 {
+  display: block;
+  margin: 15px;
+  padding: 0; }
+  /* line 359, style.scss */
+  #detail-left-type-2:hover {
+    border: 2px solid black; }
+
+/* line 355, style.scss */
+#detail-left-type-3 {
+  display: block;
+  margin: 15px;
+  padding: 0; }
+  /* line 359, style.scss */
+  #detail-left-type-3:hover {
+    border: 2px solid black; }
+
+/* line 378, style.scss */
+.detail-right .detail-right-top select {
+  width: 70%;
+  height: auto;
+  right: 0;
+  margin: 10px;
+  padding: 10px; }
+
+/* line 387, style.scss */
+#add-to-cart {
+  border: 1px solid black;
+  border-radius: 18px;
+  margin-left: 30px;
+  padding: 5px 30px 5px 30px;
+  background: black;
+  color: white;
+  font-size: 22px;
+  font-style: bold; }
+
+/* line 400, style.scss */
+.cart .cart-process {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 5px; }
+  /* line 405, style.scss */
+  .cart .cart-process *[type="button"] {
+    background-color: #f0f2e6;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0 10px 0 10px; }
+    /* line 410, style.scss */
+    .cart .cart-process *[type="button"]:hover {
+      font-size: 18px;
+      background-color: grey;
+      color: white; }
+  /* line 416, style.scss */
+  .cart .cart-process i {
+    font-size: 24px; }
+/* line 421, style.scss */
+.cart #cart-product .cart-produc-title {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: Montserrat-Bold;
+  font-style: bold; }
+/* line 429, style.scss */
+.cart #cart-product .cart-product-tag {
+  margin: 0px 30px 0px 30px;
+  padding: 40px;
+  border: 3px solid #f0f2e6; }
+  /* line 433, style.scss */
+  .cart #cart-product .cart-product-tag .row {
+    padding: 20px; }
+  /* line 436, style.scss */
+  .cart #cart-product .cart-product-tag input[name="quantity"] {
+    width: 40px;
+    text-align: center; }
+  /* line 441, style.scss */
+  .cart #cart-product .cart-product-tag .cart-product-total p {
+    text-align: center;
+    font-style: bold;
+    font-size: 18px; }
+/* line 448, style.scss */
+.cart #cart-product .cart-product-button {
+  margin: 0px 30px 0px 30px;
+  padding: 40px; }
+  /* line 451, style.scss */
+  .cart #cart-product .cart-product-button button {
+    margin: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: white;
+    border-style: solid;
+    border-radius: 18px;
+    border-color: black; }
+    /* line 463, style.scss */
+    .cart #cart-product .cart-product-button button:hover {
+      background-color: red;
+      border-color: red; }
+/* line 471, style.scss */
+.cart #cart-bill .cart-bill-form {
+  border: 3px solid #f0f2e6;
+  margin: 5px;
+  padding: 10px; }
+  /* line 475, style.scss */
+  .cart #cart-bill .cart-bill-form input {
+    display: block;
+    width: 100%; }
+  /* line 479, style.scss */
+  .cart #cart-bill .cart-bill-form button {
+    margin: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: white;
+    border-style: solid;
+    border-radius: 18px;
+    border-color: black;
+    width: 100%; }
+    /* line 492, style.scss */
+    .cart #cart-bill .cart-bill-form button:hover {
+      background-color: red;
+      border-color: red; }
+/* line 501, style.scss */
+.cart #cart-confirm #cart-confirm-product .cart-confirm-product-tag {
+  border: 3px solid #f0f2e6;
+  margin-top: 10px;
+  padding: 10px; }
+/* line 507, style.scss */
+.cart #cart-confirm #cart-confirm-total, .cart #cart-confirm #cart-confirm-customer {
+  text-align: center;
+  justify-content: center;
+  border: 5px solid grey;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  font-family: Monsterrat-Bold;
+  font-size: 32px; }
+  /* line 518, style.scss */
+  .cart #cart-confirm #cart-confirm-total p:hover, .cart #cart-confirm #cart-confirm-customer p:hover {
+    background-color: black;
+    color: white;
+    font-size: 36px; }
+  /* line 523, style.scss */
+  .cart #cart-confirm #cart-confirm-total button, .cart #cart-confirm #cart-confirm-customer button {
+    border-radius: 18px;
+    margin-left: 40px;
+    padding: 0 30px 0 30px;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: Monsterrat-Bold;
+    font-size: 32px; }
+    /* line 534, style.scss */
+    .cart #cart-confirm #cart-confirm-total button:hover, .cart #cart-confirm #cart-confirm-customer button:hover {
+      background-color: red;
+      box-shadow: 5px 5px grey; }
+
+/*# sourceMappingURL=style.css.map */

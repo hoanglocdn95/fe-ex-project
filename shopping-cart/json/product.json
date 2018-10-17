@@ -1,0 +1,58 @@
+{
+	"product":[
+		{
+			"show":0,
+			"id":0,
+			"name": "SamSung",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 1000
+		},
+		{
+			"show":0,
+			"id":1,
+			"name": "HuaWei",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 2000
+		},
+		{
+			"show":0,
+			"id":2,
+			"name": "Iphone",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 3000
+		},
+		{
+			"show":0,
+			"id":3,
+			"name": "Oppo",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 4000
+		},
+		{
+			"show":0,
+			"id":4,
+			"name": "ToCoToCo",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 1000
+		},
+		{
+			"show":0,
+			"id":5,
+			"name": "Nokia",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 5000
+		}
+	],
+	"cart":[
+		{
+			"quantity":0
+		},
+		{
+			"show":0,
+			"id":5,
+			"name": "Nokia",
+			"src": "../Demo/images/item-01.jpg",
+			"price": 5000
+		}
+	]
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cart-Demo</title>
+	<meta name="name" content="content" charset="UTF-8">
+	<link rel="icon" type="text/css" href="images/icons/favicon.png">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="sass/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<header id="header">
+			<div class="header-top row">
+				<div class="header-top-left col-lg-3">
+					<a href="#" class=" fa fa-facebook"></a>
+					<a href="#" class=" fa fa-instagram"></a>
+					<a href="#" class=" fa fa-pinterest-p"></a>
+					<a href="#" class=" fa fa-snapchat-ghost"></a>
+					<a href="#" class=" fa fa-youtube-play"></a>
+				</div>
+				<div class="header-top-center col-lg-5">
+					<p class="text-center">Miễn phí vận chuyển từ 200.000 đồng trở lên</p>
+				</div>
+				<div class="header-top-right col-lg-4">
+					<div> 
+						<p class="text-right">hoanglocdn95@gmail.com</p>
+					</div>
+					<div>
+						<select name="currency">
+							<option value="VND">VND</option>
+							<option value="USD">USD</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav row">
+				<!-- <div class="row"></div> -->
+				<div class="header-nav-brand col-lg-2 col-md-2 col-sm-6">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</div>
+				<div class="header-nav-list col-lg-8 col-md-6 hidden-sm-down">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="#">Sale</a></li>
+						<li><a href="#">Feature</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="header-nav-right col-lg-2 col-md-2 col-sm-6">
+					<span>
+						<a href="#" >
+							<img src="images/icons/icon-header-01.png" alt="ICON">
+						</a>
+					</span>
+					<span class="vertical-line"></span>
+					<span >
+						<a href="cart.html" title="cart.page">
+							<img src="images/icons/icon-header-02.png" alt="ICON">
+						</a>
+						<span class="badge badge-info" id="cart-quantity"><big>1</big></span>
+					</span>
+				</div>
+			</div>
+		</header><!-- /header -->
+		<section>
+			<div>
+				<img class="w-100 d-block" src="images/heading-pages-01.jpg" alt="contact">
+			</div>
+		</section>
+		<br>
+		<section class="cart">
+			<div class="container-fluid" id="accordion">
+				<div class="cart-process" id="confirm">
+					<button type="button" data-toggle="collapse" data-target="#cart-product" aria-expanded="false" aria-controls="cart-product" >In a cart</button>
+					<i class="fa fa-angle-double-right active"></i>
+
+					<button type="button" data-toggle="collapse" data-target="#cart-bill" aria-expanded="false" aria-controls="cart-bill" >Billing information</button>
+					<!-- <i class="fa fa-angle-double-right"></i>
+
+					<button  type="button" data-toggle="collapse" data-target="#cart-confirm" aria-expanded="false" aria-controls="cart-confirm" >Confirm</button> -->
+				</div>
+				<br>
+				<div class="collapse show" id="cart-product" data-parent="#accordion">
+					<div class="cart-product-title">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-3"></div>
+								<div class="col-3">
+									<h5>PRODUCT</h5>
+								</div>
+								<div class="col-1">
+									<h5>PRICE</h5>
+								</div>
+								<div class="col-3">
+									<h5>QUANTITY</h5>
+								</div>
+								<div class="col-2">
+									<h5>TOTAL</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-product-tag" id="cart-product-tag-load">
+						<div class="container-fluid">
+							<div class="row">
+								<center><h2>EMPTY</h2></center>
+							</div>
+						</div>
+					</div>
+					<div class="cart-product-button">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 col-sm-7">
+									<input type="text" name="coupon-code" placeholder="Coupon Code">
+									<button type="submit">APPLY COUPON</button>
+								</div>
+								<div class="col-12 col-sm-5">
+									<button type="button" onclick="inConfirm()">UPDATE CART</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="collapse" id="cart-bill" data-parent="#accordion">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-sm-2 col-md-3 col-lg-4"></div>
+							<div class="col-12 col-sm-8 col-md-7 col-lg-5">
+								<div class="cart-bill-form">
+									<h4>CART TOTALS</h4><br>
+									<h5 class="d-inline">Subtotal:   </h5>
+									<p class="d-inline" id="cart-bill-form-subtotal">$10000</p>
+									<hr>
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-3">
+												<h5><strong>Shipping:</strong></h5>
+											</div>
+											<div class="col-9">
+												<p>There are no shipping methods available. Please double check your address, or contact us if you need any help.</p> <br>
+												<h5>CALCULATE SHIPPING</h5>
+												<select id="cbf-country" name="country" required>
+													<option>Select a country</option>
+													<option>US</option>
+													<option>UK</option>
+													<option>VN</option>
+													<option>JAV</option>
+												</select>
+												<input id="cbf-state" type="text" name="state" placeholder="State/ country" required>
+												<input id="cbf-post" type="text" name="postcode" placeholder="Post Code/ Zip" required>
+												<button type="button" onclick="inConfirm()">UPDATE TOTALS</button>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<h4 class="d-inline">TOTALS:</h4> 
+									<p class="d-inline" id="cart-bill-form-totals">$1000</p>
+									<button onclick="displayProcess()" class="d-block" type="button">PROCEED TO CHECKOUT</button>
+								</div>
+							</div>
+							<div class="col-12 col-sm-2 col-md-2 col-lg-3"></div>
+						</div>
+					</div>
+				</div>
+				<div class="collapse" id="cart-confirm" data-parent="#accordion">
+					<div class="container-fluid">
+						<div class="row" id="cart-confirm-product">
+							
+						</div>
+						<div id="cart-confirm-customer">
+							<h4>Country: <strong></strong></h4>
+							<h4>State: <strong></strong></h4>
+							<h4>Post Code/Zip Code: <strong></strong></h4>
+						</div>
+						<div id="cart-confirm-total">
+							<p><small>TOTAL: </small>0</p>
+							<center><button>CONFIRM</button></center>
+						</div>
+					</div>
+				</div>
+			</div>
+		<br><br>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="footer-title">
+							<h6>GET IN TOUCH</h6>
+						</div>
+						<div>
+							<p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+						</div>
+						<div class="footer-icon">
+							<a href="#" class=" fa fa-facebook"></a>
+							<a href="#" class=" fa fa-instagram"></a>
+							<a href="#" class=" fa fa-pinterest-p"></a>
+							<a href="#" class=" fa fa-snapchat-ghost"></a>
+							<a href="#" class=" fa fa-youtube-play"></a>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="justify-content-center">
+							<h6>NEWSLETTER</h6>
+							<input type="text" name="mail" class="form-control-plaintext" placeholder=" asfaf@gmail.com">
+							<div>
+								<h5><button id="subcribe">SUBCRIBE</button></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-logo">
+					<center>
+						<a href="#">
+							<img  src="images/icons/paypal.png" alt="IMG-PAYPAL">
+						</a>
+						<a href="#">
+							<img  src="images/icons/visa.png" alt="IMG-VISA">
+						</a>
+						<a href="#">
+							<img  src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+						</a>
+						<a href="#">
+							<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+						</a>
+						<a href="#">
+							<img  src="images/icons/discover.png" alt="IMG-DISCOVER">
+						</a>
+						<div>
+							<p>
+								Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							</p>
+						</div>
+					</center>
+				</div>
+			</div>
+		</footer>
+		<div id="back">
+			<a href="#header" class="fa fa-angle-double-up"></a>
+		</div>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/action.js" type="text/javascript" charset="utf-8" async></script>
+	<script type="text/javascript" charset="utf-8" async>
+
+		function loadInCart(){
+			document.getElementById("cart-product-tag-load").innerHTML ="";
+
+			if (localStorage.nameProduct == "undefined" || localStorage.nameProduct == null) {
+				document.getElementById("cart-product-tag-load").innerHTML = 
+				'<div class="container-fluid">'+
+				'<div class="row">'+
+				'<center><h2>EMPTY</h2></center>'+
+				'</div>'+
+				'</div>';
+
+			} else {
+				var arr1 = localStorage.nameProduct.split(",");
+				var arr2 = localStorage.quantityProduct.split(",");
+				var arr3 = localStorage.priceProduct.split(",");
+
+				for (var i = 0; i < arr1.length; i++) {
+					var total= parseInt(arr2[i])* parseInt(arr3[i]);
+					document.getElementById("cart-product-tag-load").innerHTML +=
+					'<div class="container-fluid">'+
+					'<div class="row">'+
+					'<div class="col-3">'+
+					'<img class="w-75 d-block" src="images/item-01.jpg" alt="hinh">'+
+					'</div>'+
+					'<div class="col-3">'+
+					'<p>'+arr1[i]+'</p>'+
+					'</div>'+
+					'<div class="col-1">'+
+					'<p>'+arr3[i]+'</p>'+
+					'</div>'+
+					'<div class="col-3">'+
+					'<div class="btn-group" role="group" aria-label="Basic example">'+
+					'<button type="button" class="btn btn-secondary"><i class="fa fa-minus" style="font-size: 18px"></i></button>'+
+					'<input name="quantity" value="'+arr2[i]+'">'+
+					'<button type="button" class="btn btn-secondary"><i class="fa fa-plus" style="font-size: 18px"></i></button>'+
+					'</div></div>'+
+					'<div class="col-2 cart-product-total" >'+
+					'<p>'+total+'</p>'+
+					'<button onclick="deleteProduct('+i+')" style="font-size:24px">DELETE <i class="material-icons">delete_forever</i></button>'+
+					'</div></div></div>';
+				}   
+			}
+		}
+		function del(index,localS){
+			var arr = localStorage.getItem(localS).split(",");
+			
+			delete arr[index];
+			for (var i= index; i < arr.length; i++) {
+				arr[i] = arr[i+1];
+			}
+			arr.pop();
+			localStorage.removeItem(localS);
+			localStorage.setItem(localS, arr[0]);
+			var str= arr[0];
+			for (var i = 1; i < arr.length; i++) {
+				if (arr[i]== undefined) {
+					continue;
+				} else{
+					str +=","+arr[i];
+				}
+			}
+			localStorage.setItem(localS, str);
+		}
+
+		function deleteProduct(index){
+			var i = parseInt(index);
+			del(i, "nameProduct" );
+			del(i, "quantityProduct" );
+			del(i, "priceProduct" );
+			loadInCart();
+		}
+		loadInCart();
+
+		function inConfirm(){
+			var total= 0;
+			document.getElementById("cart-confirm-product").innerHTML = "";
+
+			if(checkProcess()==false){
+				document.getElementById("cart-confirm-product").innerHTML +=
+					'<div class="container-fluid">'+
+					'<div class="row">'+
+					'<center><h2>EMPTY</h2></center>'+
+					'</div>'+
+					'</div>';
+				alert("Please choose a product and type your info in State/ and Country before you update cart ");
+				return false;
+			} else {
+				var arr1 = localStorage.nameProduct.split(",");
+				var arr2 = localStorage.quantityProduct.split(",");
+				var arr3 = localStorage.priceProduct.split(",");
+
+				for (var i = 0; i < arr1.length; i++) {
+					total+= parseInt(arr2[i])* parseInt(arr3[i]);
+
+					document.getElementById("cart-confirm-product").innerHTML +=
+						'<div class="col-12 col-sm-6 col-md-4 col-lg-4 ">'+
+							'<div class="cart-confirm-product-tag">'+
+								'<div class="container-fluid">'+
+									'<div class="row">'+
+										'<div class="ccpt-image col-6">'+
+											'<img class="w-100 d-block" src="images/item-01.jpg" alt="hinh">'+
+										'</div>'+
+										'<div class="ccpt-info col-6">'+
+											'<big><h5>'+arr1[i]+'</h5></big>'+
+											'<h5><strong>Quantity: </strong>'+arr2[i]+'</h5>'+
+											'<h5><strong>Price: </strong>'+arr3[i]+'</h5>'+
+											'<h5><strong>Ship: </strong>none</h5>'+
+										'</div>'+
+										'<div class="col-12">'+
+											'<p><strong>Note</strong></p>'+
+										'</div>'+
+									'</div>'+
+								'</div>'+
+							'</div>'+
+						'</div>';				
+				}
+				localStorage.stateCustomer= document.getElementById("cbf-state").value;
+  				localStorage.postCustomer= document.getElementById("cbf-post").value;
+  				localStorage.countryCustomer= document.getElementById("cbf-country").value;
+			document.getElementById("cart-confirm-customer").innerHTML=
+				'<h4>Country: <strong>'+localStorage.countryCustomer+'</strong></h4>'+
+				'<h4>State: <strong>'+localStorage.stateCustomer+'</strong></h4>'+
+				'<h4>Post Code/Zip Code: <strong>'+localStorage.postCustomer+'</strong></h4>';
+			document.getElementById("cart-confirm-total").innerHTML = 
+				'<p><small>TOTAL:</small> '+total+'</p>'+
+				'<center><button onclick="confirmAndDelAll()">CONFIRM</button></center>';
+			return true;
+			}	
+		}
+		function checkProcess(){
+			if (document.getElementById("cbf-state").value == null ||
+				document.getElementById("cbf-state").value == "" || 
+				document.getElementById("cbf-post").value == null ||
+				document.getElementById("cbf-post").value == "" ||
+				document.getElementById("cbf-country").value == null || 
+				document.getElementById("cbf-country").value == "" || 
+				(localStorage.nameProduct == null || localStorage.nameProduct == "undefined")) 
+			{
+				return false;
+			} else { 
+				return true;
+			}
+		}
+		function displayProcess(){
+			if (inConfirm()==true) {
+				document.getElementById("confirm").innerHTML+=
+				'<i class="fa fa-angle-double-right"></i>'+
+				'<button type="button" data-toggle="collapse" data-target="#cart-confirm" aria-expanded="false" aria-controls="cart-confirm">Confirm</button>';
+				document.getElementById("cart-product").className = "collapse";
+				document.getElementById("cart-bill").className = "collapse";
+				document.getElementById("cart-confirm").className = "collapse show";
+			}
+		}
+		function confirmAndDelAll(){
+			localStorage.removeItem("nameProduct");
+			localStorage.removeItem("quantityProduct");
+			localStorage.removeItem("priceProduct");
+			alert("The order are sent!!!");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shop-Demo</title>
+	<meta name="name" content="content" charset="UTF-8">
+	<link rel="icon" type="text/css" href="images/icons/favicon.png">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="sass/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header id="header">
+			<div class="header-top row">
+				<div class="header-top-left col-lg-3">
+					<a href="#" class=" fa fa-facebook"></a>
+					<a href="#" class=" fa fa-instagram"></a>
+					<a href="#" class=" fa fa-pinterest-p"></a>
+					<a href="#" class=" fa fa-snapchat-ghost"></a>
+					<a href="#" class=" fa fa-youtube-play"></a>
+				</div>
+				<div class="header-top-center col-lg-5">
+					<p class="text-center">Miễn phí vận chuyển từ 200.000 đồng trở lên</p>
+				</div>
+				<div class="header-top-right col-lg-4">
+					<div> 
+						<p class="text-right">hoanglocdn95@gmail.com</p>
+					</div>
+					<div>
+						<select name="currency">
+							<option value="VND">VND</option>
+							<option value="USD">USD</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav row">
+				<!-- <div class="row"></div> -->
+				<div class="header-nav-brand col-lg-2 col-md-2 col-sm-6">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</div>
+				<div class="header-nav-list col-lg-8 col-md-6 hidden-sm-down">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="#">Sale</a></li>
+						<li><a href="#">Feature</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="header-nav-right col-lg-2 col-md-2 col-sm-6">
+					<span>
+						<a href="#" >
+							<img src="images/icons/icon-header-01.png" alt="ICON">
+						</a>
+					</span>
+					<span class="vertical-line"></span>
+					<span >
+						<a href="cart.html" title="cart.page">
+							<img src="images/icons/icon-header-02.png" alt="ICON">
+						</a>
+						<span class="badge badge-info" id="cart-quantity"><big>0</big></span>
+					</span>
+				</div>
+			</div>
+		</header><!-- /header -->
+		<section>
+			<div>
+				<img class="w-100 d-block" src="images/heading-pages-01.jpg" alt="contact">
+			</div>
+		</section>
+		<br><br>
+		<section class="shop">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+						<div class="shop-left">
+							<div class="shop-left-cate">
+								<h4>Categories</h4>
+								<p class="text-capitalize">
+									<a href="#">all</a> <br>
+									<a href="#">women</a> <br>
+									<a href="#">men</a> <br>
+									<a href="#">kids</a> <br>
+									<a href="#">accesories</a> 
+								</p>	
+							</div>
+							<div class="shop-left-filter">
+								<h4>Filter</h4>
+								<br> <hr> <br>
+								<h5>Price</h5>
+								<input type="range" class="custom-range" id="customRange1">
+								<button>FILTER</button> 
+							</div>
+							<br><hr>
+							<div class="shop-left-color">
+								<div>
+									<h5>Color</h5>
+								</div>
+								<div class="shop-left-color-select">	
+									<div id="color-1"></div>			
+									<div id="color-2"></div>			
+									<div id="color-3"></div>			
+									<div id="color-4"></div>			
+									<div id="color-5"></div>			
+									<div id="color-6"></div>			
+								</div>
+								<br><br>
+								<div>
+									<input type="search" placeholder="Search products">
+									<button><i class="fa fa-search"></i></button>
+								</div>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-8 col-lg-9 col-xl-9">
+						<div class="shop-content">
+							<div class="shop-content-drop">
+								<div class="d-inline-block">
+									<select name="feature" >
+										<option value="d">Default Sorting</option>
+										<option value="p">Popularity</option>
+										<option value="lth">Low to high</option>
+										<option value="htl">High to low</option>
+									</select>
+								</div>
+								<div class="d-inline-block">
+									<select name="price" >
+										<option value="d3">Price</option>
+										<option value="p4">5k - 10k</option>
+										<option value="lt5h">10k - 15k</option>
+										<option value="h5tl">15k-20k</option>
+									</select>
+								</div>
+							</div>
+							<div class="container-fluid">
+								<div class="row" id="shop-content-display">
+									<!-- <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+										<div class="shop-content-item">
+											<img src="images/item-01.jpg" alt="hinh" class="w-100 d-block">
+											<a href="#">Herschel supply co 25l</a>
+											<p>$75.00</p>
+										</div>
+									</div> -->
+									
+								</div>
+								<div class="shop-content-page">
+									<div class="d-inline-block" ><p>1</p></div>
+									<div class="d-inline-block"><p>2</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br><br>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="footer-title">
+							<h6>GET IN TOUCH</h6>
+						</div>
+						<div>
+							<p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+						</div>
+						<div class="footer-icon">
+							<a href="#" class=" fa fa-facebook"></a>
+							<a href="#" class=" fa fa-instagram"></a>
+							<a href="#" class=" fa fa-pinterest-p"></a>
+							<a href="#" class=" fa fa-snapchat-ghost"></a>
+							<a href="#" class=" fa fa-youtube-play"></a>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+							<div class="col-4 footer-title">
+								<h6>CATEGORIES</h6>
+								<div>
+									<p>Men</p>
+								</div>
+								<div>
+									<p>Women</p>
+								</div>
+								<div>
+									<p>Children</p>
+								</div>
+								<div>
+									<p>Girls</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+						<div class="justify-content-center">
+							<h6>NEWSLETTER</h6>
+							<input type="text" name="mail" class="form-control-plaintext" placeholder=" asfaf@gmail.com">
+							<div>
+								<h5><button id="subcribe">SUBCRIBE</button></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-logo">
+					<center>
+						<a href="#">
+							<img  src="images/icons/paypal.png" alt="IMG-PAYPAL">
+						</a>
+						<a href="#">
+							<img  src="images/icons/visa.png" alt="IMG-VISA">
+						</a>
+						<a href="#">
+							<img  src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+						</a>
+						<a href="#">
+							<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+						</a>
+						<a href="#">
+							<img  src="images/icons/discover.png" alt="IMG-DISCOVER">
+						</a>
+						<div>
+							<p>
+								Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							</p>
+						</div>
+					</center>
+				</div>
+			</div>
+		</footer>
+		<div id="back">
+			<a href="#header" class="fa fa-angle-double-up"></a>
+		</div>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/action.js" type="text/javascript" charset="utf-8" async></script>
+	<script src="json/product.json" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

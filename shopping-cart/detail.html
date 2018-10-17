@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Detail-Demo</title>
+	<meta name="name" content="content" charset="UTF-8">
+	<link rel="icon" type="text/css" href="images/icons/favicon.png">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="sass/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header id="header">
+			<div class="header-top row">
+				<div class="header-top-left col-lg-3">
+					<a href="#" class=" fa fa-facebook"></a>
+					<a href="#" class=" fa fa-instagram"></a>
+					<a href="#" class=" fa fa-pinterest-p"></a>
+					<a href="#" class=" fa fa-snapchat-ghost"></a>
+					<a href="#" class=" fa fa-youtube-play"></a>
+				</div>
+				<div class="header-top-center col-lg-5">
+					<p class="text-center">Miễn phí vận chuyển từ 200.000 đồng trở lên</p>
+				</div>
+				<div class="header-top-right col-lg-4">
+					<div> 
+						<p class="text-right">hoanglocdn95@gmail.com</p>
+					</div>
+					<div>
+						<select name="currency">
+							<option value="VND">VND</option>
+							<option value="USD">USD</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav row">
+				<!-- <div class="row"></div> -->
+				<div class="header-nav-brand col-lg-2 col-md-2 col-sm-6">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</div>
+				<div class="header-nav-list col-lg-8 col-md-6 hidden-sm-down">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="#">Sale</a></li>
+						<li><a href="#">Feature</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="header-nav-right col-lg-2 col-md-2 col-sm-6">
+					<span>
+						<a href="#" >
+							<img src="images/icons/icon-header-01.png" alt="ICON">
+						</a>
+					</span>
+					<span class="vertical-line"></span>
+					<span >
+						<a href="cart.html" title="cart.page">
+							<img src="images/icons/icon-header-02.png" alt="ICON">
+						</a>
+						<span class="badge badge-info" id="cart-quantity"><big>0</big></span>
+					</span>
+				</div>
+			</div>
+		</header><!-- /header -->
+		<section class="detail">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="detail-left">
+							<div class="detail-left-browser">
+								
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<div class="detail-left-type">
+										<img id="detail-left-type-1" class="d-block w-100" src="images/item-cart-01.jpg" alt="1">
+										<img id="detail-left-type-2" class="d-block w-100" src="images/item-cart-01.jpg" alt="1">
+										<img id="detail-left-type-3" class="d-block w-100" src="images/item-cart-01.jpg" alt="1">
+										
+									</div>
+								</div>
+								<div class="col-10">
+									<div class="detail-left-display">
+										<img id="detail-left-display-1" class="w-100" src="images/product-detail-01.jpg" alt="1">
+										<!-- <img id="detail-left-display-2" class=" w-100" src="images/product-detail-01.jpg" alt="2">
+											<img id="detail-left-display-3" class=" w-100" src="images/product-detail-01.jpg" alt="3"> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<div class="detail-right">
+								<div class="detail-right-top">
+									<br><br>
+									<h4 id="detail-right-top-name"></h4>
+									<h4 id="detail-right-top-price"></h4>
+									<p>Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat</p><br>
+									<label>Size</label>  
+									<select name="size">
+										<option selected>Choose an option</option>
+										<option>size S</option>
+										<option>size X</option>
+										<option>size M</option>
+										<option>size L</option>
+									</select>
+									<br>
+									<label>Color</label>  
+									<select name="size">
+										<option selected>Choose an option</option>
+										<option>Red</option>
+										<option>Black</option>
+										<option>White</option>
+										<option>Blue</option>
+									</select>
+									<div class="justify-content-center">
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" id="button-quantity-up" class="btn btn-secondary" onclick="btnUp()"><i class="fa fa-plus"></i></button>
+											<input id="input-quantity" value="1" class="form-control">
+											<button type="button" id="button-quantity-down" class="btn btn-secondary" onclick="btnDown()"><i class="fa fa-minus"></i></button>
+										</div>
+
+										<button id="add-to-cart" onclick="count()">ADD TO CART</button>
+									</div>
+								</div>
+								<hr>
+								<div class="detail-right-bottom">
+									<div id="accordion" role="tablist">
+										<div class="card">
+											<div class="card-header" role="tab" id="headingOne">
+												<h5 class="mb-0">
+													<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														Description
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" role="tab" id="headingTwo">
+												<h5 class="mb-0">
+													<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+														Additional information
+
+													</a>
+												</h5>
+											</div>
+											<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" role="tab" id="headingTwo">
+												<h5 class="mb-0">
+													<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+														Reviews
+
+													</a>
+												</h5>
+											</div>
+											<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br><br>
+			<section class="slide-item">
+				<div>
+					<h3>RELATED PRODUCTS</h3>
+				</div>
+				<div id="carouselExampleSlidesOnly-2" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+									<div class="col-10 col-sm-6 hidden-md-down col-lg-3 col-xl-3">
+										<img class="card-img" src="images/item-01.jpg" alt="6">
+										<a href="detail.html">Detailed item</a>
+
+										<p>Price</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br><br>
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+							<div class="footer-title">
+								<h6>GET IN TOUCH</h6>
+							</div>
+							<div>
+								<p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+							</div>
+							<div class="footer-icon">
+								<a href="#" class=" fa fa-facebook"></a>
+								<a href="#" class=" fa fa-instagram"></a>
+								<a href="#" class=" fa fa-pinterest-p"></a>
+								<a href="#" class=" fa fa-snapchat-ghost"></a>
+								<a href="#" class=" fa fa-youtube-play"></a>
+							</div>
+						</div>
+						<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+							<div class="row">
+								<div class="col-4 footer-title">
+									<h6>CATEGORIES</h6>
+									<div>
+										<p>Men</p>
+									</div>
+									<div>
+										<p>Women</p>
+									</div>
+									<div>
+										<p>Children</p>
+									</div>
+									<div>
+										<p>Girls</p>
+									</div>
+								</div>
+								<div class="col-4 footer-title">
+									<h6>CATEGORIES</h6>
+									<div>
+										<p>Men</p>
+									</div>
+									<div>
+										<p>Women</p>
+									</div>
+									<div>
+										<p>Children</p>
+									</div>
+									<div>
+										<p>Girls</p>
+									</div>
+								</div>
+								<div class="col-4 footer-title">
+									<h6>CATEGORIES</h6>
+									<div>
+										<p>Men</p>
+									</div>
+									<div>
+										<p>Women</p>
+									</div>
+									<div>
+										<p>Children</p>
+									</div>
+									<div>
+										<p>Girls</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+							<div class="justify-content-center">
+								<h6>NEWSLETTER</h6>
+								<input type="text" name="mail" class="form-control-plaintext" placeholder=" asfaf@gmail.com">
+								<div>
+									<h5><button id="subcribe">SUBCRIBE</button></h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-logo">
+						<center>
+							<a href="#">
+								<img  src="images/icons/paypal.png" alt="IMG-PAYPAL">
+							</a>
+							<a href="#">
+								<img  src="images/icons/visa.png" alt="IMG-VISA">
+							</a>
+							<a href="#">
+								<img  src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
+							</a>
+							<a href="#">
+								<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
+							</a>
+							<a href="#">
+								<img  src="images/icons/discover.png" alt="IMG-DISCOVER">
+							</a>
+							<div>
+								<p>
+									Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+								</p>
+							</div>
+						</center>
+					</div>
+				</div>
+			</footer>
+			<div id="back">
+				<a href="#header" class="fa fa-angle-double-up"></a>
+			</div>
+		</div>
+		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+		<script src="vendor/bootstrap/js/popper.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/action.js" type="text/javascript" charset="utf-8"></script>
+		<script src="json/product.json" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			var inputValue = parseInt(document.getElementById("input-quantity").value);
+			console.log(inputValue);
+			var btnUp = function(){
+				inputValue +=1;
+				console.log(inputValue);
+				document.getElementById("input-quantity").value = inputValue;
+			}
+			var btnDown = function(){
+				if(inputValue < 1){
+					alert("Cannot decrease the quantity of product anymore");
+				} else{
+					inputValue -=1;
+					console.log(inputValue);
+					document.getElementById("input-quantity").value = inputValue;
+				}
+			}
+
+			
+			var count = function(){
+				var count =0;
+				if (localStorage.nameProduct==null || localStorage.nameProduct=="undefined") {
+					
+					localStorage.nameProduct = document.getElementById("detail-right-top-name").innerHTML;
+					localStorage.quantityProduct = document.getElementById("input-quantity").value;
+					localStorage.priceProduct =document.getElementById("detail-right-top-price").innerHTML;
+				}else{
+					var arrProduct = localStorage.nameProduct.split(",");
+					var arrQuantity = localStorage.quantityProduct.split(",");
+					var arrPrice = localStorage.priceProduct.split(",");
+					console.log(arrQuantity);
+
+					for (var i = 0; i < arrProduct.length; i++) {
+						if (arrProduct[i]==document.getElementById("detail-right-top-name").innerHTML){
+							var num = parseInt(arrQuantity[i]);
+							num = num+ parseInt(document.getElementById("input-quantity").value);
+							arrQuantity[i]= num;
+							localStorage.removeItem("quantityProduct");
+							localStorage.quantityProduct = arrQuantity[0];
+
+							alert(localStorage.quantityProduct+" and "+arrQuantity);
+							for (var i = 1; i < arrQuantity.length; i++) {
+								if (arrQuantity[i]== undefined) {
+									continue;
+								} else{
+									localStorage.quantityProduct += ","+arrQuantity[i];
+								}
+							}
+							count=1;
+							break;
+						}
+					}
+					if (count!=1) {
+						localStorage.nameProduct += ","+ document.getElementById("detail-right-top-name").innerHTML;
+						localStorage.priceProduct += ","+ document.getElementById("detail-right-top-price").innerHTML;
+						localStorage.quantityProduct += ","+document.getElementById("input-quantity").value;
+
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
